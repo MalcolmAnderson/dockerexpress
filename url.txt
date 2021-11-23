@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=9zUHg7xjIqQ
+5:21:59 - Learn Docker - DevOps with Node.js & Express
+
+Dir is running from wsl path =
+~/dev/dockerexpress
