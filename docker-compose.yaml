@@ -10,12 +10,13 @@ services:
     #   - /app/node_modules
     environment:
       - PORT=2000
+    depends_on:
+      - mongo
     # env_file:
     #   - ./.env
 
   mongo:
     image: mongo
-    # restart: always
     environment:
       - MONGO_INITDB_ROOT_USERNAME=mba
       - MONGO_INITDB_ROOT_PASSWORD=mba

@@ -22,7 +22,10 @@ docker run -v $(pwd):/app:ro -v /app/node_modules --env-file=./.env  -p 4000:200
 # db.books.find()
 
 # docker logs container_name
+# docker logs container_name -f (follow i.e. tail command)
 # docker inspect container_name
 # docker network ls
+# docker network inspect network_name
+
 
 
