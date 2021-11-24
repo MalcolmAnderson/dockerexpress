@@ -1,5 +1,6 @@
 version: "3"
 services:
+
   node-app:
     build: .
     ports:
@@ -11,3 +12,15 @@ services:
       - PORT=2000
     # env_file:
     #   - ./.env
+
+  mongo:
+    image: mongo
+    # restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mba
+      - MONGO_INITDB_ROOT_PASSWORD=mba
+    volumes:
+      - mongo-db:/data/db
+
+volumes:
+  mongo-db:

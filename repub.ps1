@@ -13,3 +13,16 @@ docker run -v $(pwd):/app:ro -v /app/node_modules --env-file=./.env  -p 4000:200
 # docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up -d (--build)
 # docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml down -v
 
+# docker volume ls // show docker volumes
+
+# docker exec -it dockerexpress_mongo_1 mongo -u "mba" -p "mba"
+# show dbs
+# use mybd
+# db.books.insert({"name": "harry potter"})
+# db.books.find()
+
+# docker logs container_name
+# docker inspect container_name
+# docker network ls
+
+
