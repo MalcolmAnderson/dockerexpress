@@ -1,7 +1,13 @@
 const express = require("express");
 const mongoose = require('mongoose');
-const { MONGO_USER, MONGO_PASSWORD, MONGO_IP, MONGO_PORT } = require("./config/config");
+const { 
+    MONGO_USER, 
+    MONGO_PASSWORD, 
+    MONGO_IP, 
+    MONGO_PORT 
+} = require("./config/config");
 
+const postRouter = require("./routes/postRoutes");
 
 const app = express();
 
@@ -25,9 +31,15 @@ const connectWithRetry = () => {
 // .catch((e) => console.log(e));
 connectWithRetry();
 
+//the middleware
+app.use(express.json());
+
 app.get("/", (req, res) => {
-    res.send("<h2>Hi There - now with retry logic</h2>");
+    res.send("<h2>Hi There - now with routes </h2>");
 });
+
+// localhost:3000/:id
+app.use("/api/v1/posts", postRouter);
 
 const port = process.env.PORT || 3000;
 
