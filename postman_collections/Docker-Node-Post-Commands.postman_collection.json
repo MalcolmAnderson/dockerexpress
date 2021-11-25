@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "bccc1711-8c2b-4d30-91bd-b723024937d6",
+		"name": "Docker-Node-Post-Commands",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Delete a post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"my first post updated\",\r\n    \"body\": \"third update of first post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/posts/619f22f66c8c7280fa4d1144",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"619f22f66c8c7280fa4d1144"
+					]
+				},
+				"description": "mba-Docker-Node-Express post routes"
+			},
+			"response": []
+		},
+		{
+			"name": "get a single post Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"my first post updated\",\r\n    \"body\": \"third update of first post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/posts/619f0a92e4cf3a2a760e585a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"619f0a92e4cf3a2a760e585a"
+					]
+				},
+				"description": "mba-Docker-Node-Express post routes"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"my nth post\",\r\n    \"body\": \"body of nth post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					]
+				},
+				"description": "mba-Docker-Node-Express post routes"
+			},
+			"response": []
+		},
+		{
+			"name": "get all posts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"my first post updated\",\r\n    \"body\": \"third update of first post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"posts"
+					]
+				},
+				"description": "mba-Docker-Node-Express post routes"
+			},
+			"response": []
+		},
+		{
+			"name": "Update aa single post",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"my first post updated\",\r\n    \"body\": \"third update of first post\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/posts/619f0a92e4cf3a2a760e585a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"posts",
+						"619f0a92e4cf3a2a760e585a"
+					]
+				},
+				"description": "mba-Docker-Node-Express post routes"
+			},
+			"response": []
+		}
+	]
+}

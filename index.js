@@ -8,6 +8,7 @@ const {
 } = require("./config/config");
 
 const postRouter = require("./routes/postRoutes");
+const userRouter = require("./routes/userRoutes");
 
 const app = express();
 
@@ -30,16 +31,17 @@ const connectWithRetry = () => {
 // .then(() => console.log("successfully connected to DB"))
 // .catch((e) => console.log(e));
 connectWithRetry();
-
+ 
 //the middleware
 app.use(express.json());
-
+ 
 app.get("/", (req, res) => {
-    res.send("<h2>Hi There - now with routes </h2>");
+    res.send("<h2>Hyellow there Mossifer</h2>");
 });
 
 // localhost:3000/:id
 app.use("/api/v1/posts", postRouter);
+app.use("/api/v1/users", userRouter);
 
 const port = process.env.PORT || 3000;
 
