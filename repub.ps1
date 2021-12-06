@@ -11,8 +11,12 @@ docker run -v $(pwd):/app:ro -v /app/node_modules --env-file=./.env  -p 4000:200
 # docker-compose down -v
 
 # docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up -d (--build)
-# docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up -d --build -V 
 # docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml down -v
+
+# docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml up -d --build -V 
+# docker-compose -f docker-compose.yaml -f docker-compose.dev.yaml down 
+
+# http://localhost:4000/
 
 # docker volume ls // show docker volumes
 
